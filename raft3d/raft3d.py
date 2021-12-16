@@ -193,5 +193,5 @@ class RAFT3D(nn.Module):
             return flow_est_list, flow_rev_list
 
         Ts_up = se3_field.upsample_se3(Ts, mask)
-        return Ts_up
+        return Ts_up, mask
 
